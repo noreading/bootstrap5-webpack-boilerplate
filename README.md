@@ -67,7 +67,7 @@ The boilerplate needs [Node.js](https://nodejs.org/en/) to be installed on your 
 
 ## 3. Environment Configuration
 
-If you use sensitive information in your code, like API keys or encryption tokens, you should never store those in your code repository. This can could lead to a security issue, especially if the repository is public.
+If you use sensitive information in your code, like API keys or encryption tokens, you should never store those in your code repository. This could lead to a security issue, especially if the repository is public.
 
 Therefore I included the [dotenv-webpack](https://github.com/mrsteele/dotenv-webpack) plugin in this boilerplate, that enables you to store all your sensitive information in a `.env` file, that is ignored by git.
 
