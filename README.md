@@ -289,7 +289,7 @@ Each size has the following options.
     <tr>
       <td valign="top">name</td>
       <td valign="top">{string}</td>
-      <td valign="top">The name of the collection, to identify it in error messages, etc.</td>
+      <td valign="top">The name of the size, to identify it in error messages, etc.</td>
       <td valign="top">yes</td>
       <td valign="top">-</td>
     </tr>
