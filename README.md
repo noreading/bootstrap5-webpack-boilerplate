@@ -349,7 +349,7 @@ The resizing command supports different arguments to remove resized images, recr
       <td valign="top">Removes the resized versions of all files and recreates them.</td>
     </tr>
     <tr>
-      <td valign="top">npm run remove</td>
+      <td valign="top">npm run images remove</td>
       <td valign="top">Removes the resized versions of all files.</td>
     </tr>
   </tbody>
