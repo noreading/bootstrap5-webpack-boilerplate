@@ -44,10 +44,19 @@ module.exports = {
                         options: {
                             importLoaders: 2,
                             sourceMap: true,
-                            url: false
+                            url: false,
                         }
                     },
-                    'postcss-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    'autoprefixer',
+                                ]
+                            }
+                        }
+                    },
                     'sass-loader'
                 ],
             },
