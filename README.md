@@ -98,7 +98,7 @@ If you want to add fonts from [fonts.google.com](https://fonts.google.com/), you
 The boilerplate uses the [Roboto](https://fonts.google.com/specimen/Roboto) as an example.
 
 1. Download the required font families as ZIP files from [fonts.google.com](https://fonts.google.com/).
-2. Extract the files and copy the folders to `dist/fonts/` in the theme directory.
+2. Extract the files and copy the folders to `/fonts/` in the theme directory.
 3. Generate the formats "eot", "woff" and "woff2" using [transfonter.org](https://transfonter.org/) and save them.
 4. Open the file `src/scss/_fonts.scss` and use the mixin `googleFont()` to add the fonts.
 

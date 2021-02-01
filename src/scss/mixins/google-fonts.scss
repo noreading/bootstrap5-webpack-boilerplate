@@ -37,10 +37,10 @@ $fontWeightNames: (
       font-family: "#{$fontFamily}";
       font-weight: $weight;
       font-display: swap;
-      src: url("../fonts/#{$folderName}/#{$fileName}-#{$weightName}.eot"); /* IE 9 - 11 */
-      src: url("../fonts/#{$folderName}/#{$fileName}-#{$weightName}.eot?#iefix") format('embedded-opentype'), /* IE 9 - 11 */
-      url("../fonts/#{$folderName}/#{$fileName}-#{$weightName}.woff2") format('woff2'),
-      url("../fonts/#{$folderName}/#{$fileName}-#{$weightName}.woff") format('woff');
+      src: url("../../fonts/#{$folderName}/#{$fileName}-#{$weightName}.eot"); /* IE 9 - 11 */
+      src: url("../../fonts/#{$folderName}/#{$fileName}-#{$weightName}.eot?#iefix") format('embedded-opentype'), /* IE 9 - 11 */
+      url("../../fonts/#{$folderName}/#{$fileName}-#{$weightName}.woff2") format('woff2'),
+      url("../../fonts/#{$folderName}/#{$fileName}-#{$weightName}.woff") format('woff');
     }
   }
 }
