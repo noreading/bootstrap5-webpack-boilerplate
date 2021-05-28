@@ -1,6 +1,6 @@
 {
   "name": "bootstrap5-webpack-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple boilerplate using Bootstrap 5, Webpack and Babel.",
   "main": "index.js",
   "scripts": {
