@@ -23,7 +23,7 @@
     "bootstrap": "^5.0.1",
     "css-loader": "^5.2.6",
     "dotenv-webpack": "^7.0.2",
-    "fast-glob": "^3.2.5",
+    "fast-glob": "^3.2.7",
     "mime-types": "^2.1.30",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^6.0.0",
