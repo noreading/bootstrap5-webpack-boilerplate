@@ -31,11 +31,11 @@
     "postcss": "^8.3.5",
     "postcss-loader": "^5.3.0",
     "postcss-preset-env": "^5.3.0",
-    "sass-loader": "^11.1.1",
+    "sass-loader": "^12.1.0",
     "sharp": "^0.28.3",
     "style-loader": "^2.0.0",
     "trash": "^7.1.1",
     "webpack": "^5.44.0",
-    "webpack-cli": "^4.7.0"
+    "webpack-cli": "^4.7.2"
   }
 }
