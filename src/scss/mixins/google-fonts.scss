@@ -50,7 +50,7 @@ $fontWeightNames: (
 //---------------------------------------------
 
 @mixin googleFonts($fonts) {
-  @each $name, $font in $fonts {
+  @each $font in $fonts {
     @include googleFont($font);
   }
 }
