@@ -32,7 +32,7 @@
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
     "sass-loader": "^12.1.0",
-    "sharp": "^0.28.3",
+    "sharp": "^0.29.0",
     "style-loader": "^3.2.1",
     "trash": "^7.1.1",
     "webpack": "^5.44.0",
