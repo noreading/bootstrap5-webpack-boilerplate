@@ -22,7 +22,7 @@
     "babel-loader": "^8.2.2",
     "bootstrap": "^5.1.0",
     "css-loader": "^6.0.0",
-    "dotenv-webpack": "^7.0.2",
+    "dotenv-webpack": "^7.0.3",
     "fast-glob": "^3.2.7",
     "mime-types": "^2.1.32",
     "mini-css-extract-plugin": "^2.2.0",
