@@ -1,10 +1,14 @@
 # Bootstrap 5 + WebPack 5 = Boilerplate
 
-This is a professional front-end template for building web apps and sites faster, without having to create the basic setup on your own, every time you start a new project.
+This is a professional front-end template for building web apps and sites faster, without having to create the basic
+setup on your own, every time you start a new project.
 
-The template is based on the [Bootstrap Framework](http://getbootstrap.com/) in version 5 and uses [Webpack](https://webpack.js.org/) in version 5 as a flexible and modern module bundler. All common features for front-end projects (like SCSS compilation, minifying of Assets, etc.) are included out of the box.
+The template is based on the [Bootstrap Framework](http://getbootstrap.com/) in version 5 and
+uses [Webpack](https://webpack.js.org/) in version 5 as a flexible and modern module bundler. All common features for
+front-end projects (like SCSS compilation, minifying of Assets, etc.) are included out of the box.
 
-In addition to the basic front-end project setup, I added some cool features like a configurable image resizing command to make generating responsive images a breeze.
+In addition to the basic front-end project setup, I added some cool features like a configurable image resizing command
+to make generating responsive images a breeze.
 
 ## Table of Contents
 
@@ -17,7 +21,8 @@ In addition to the basic front-end project setup, I added some cool features lik
 
 ## 1. Requirements
 
-The boilerplate needs [Node.js](https://nodejs.org/en/) to be installed on your system. It was tested with version 12 and newer.
+The boilerplate needs [Node.js](https://nodejs.org/en/) to be installed on your system. It was tested with version 12
+and newer.
 
 ## 2. Quick Start
 
@@ -54,26 +59,33 @@ The boilerplate needs [Node.js](https://nodejs.org/en/) to be installed on your 
    ```bash
    npm run dev
    ```
-   
-   The dev command will start Webpack and tell it to watch for changes in JS and SCSS files, to recompile the needed assets.  
-   
+
+   The dev command will start Webpack and tell it to watch for changes in JS and SCSS files, to recompile the needed
+   assets.
+
    If you want to compile all assets for production usage, run the following command.
 
    ```bash
    npm run build
    ```
 
-   This command tells webpack to run in production mode and compiles all of the assets in a minified version, to deliver smaller files for your users.
+   This command tells webpack to run in production mode and compiles all of the assets in a minified version, to deliver
+   smaller files for your users.
 
 ## 3. Environment Configuration
 
-If you use sensitive information in your code, like API keys or encryption tokens, you should never store those in your code repository. This could lead to a security issue, especially if the repository is public.
+If you use sensitive information in your code, like API keys or encryption tokens, you should never store those in your
+code repository. This could lead to a security issue, especially if the repository is public.
 
-Therefore I included the [dotenv-webpack](https://github.com/mrsteele/dotenv-webpack) plugin in this boilerplate, that enables you to store all your sensitive information in a `.env` file, that is ignored by git.
+Therefore, I included the [dotenv-webpack](https://github.com/mrsteele/dotenv-webpack) plugin in this boilerplate, that
+enables you to store all your sensitive information in a `.env` file, that is ignored by git.
 
-The `.env.default` file should contain all the variables that your application needs, but without the real data and should contain either empty variables or default values that can be used by everyone. The variables will get replaced during asset compilation so that only those variables are added, that are referenced in your code.
+The `.env.default` file should contain all the variables that your application needs, but without the real data and
+should contain either empty variables or default values that can be used by everyone. The variables will get replaced
+during asset compilation so that only those variables are added, that are referenced in your code.
 
-It is a common scheme to use an uppercase syntax for environment variables, as you can see in the example below. Comments inside of .env files start with a hash.
+It is a common scheme to use an uppercase syntax for environment variables, as you can see in the example below.
+Comments inside of .env files start with a hash.
 
 ```
 # GOOGLE APIs
@@ -86,11 +98,13 @@ CACHE_ENABLED=false
 CACHE_TIMEOUT=3600
 ```
 
-You can test the usage of environment variables by editing the `.envt` file and changing the value of `HELLO`. After re-compiling the assets you should see a message in the developer console, as soon as you visit the demo page.
+You can test the usage of environment variables by editing the `.envt` file and changing the value of `HELLO`. After
+re-compiling the assets you should see a message in the developer console, as soon as you visit the demo page.
 
 **Important:**
 
-After each change of the `.env` file you need to reload Webpack, as the environment is only loaded once per runtime. If you've got an active `npm run dev` command, you need to stop and re-run it, for the changes to take effect.
+After each change of the `.env` file you need to reload Webpack, as the environment is only loaded once per runtime. If
+you've got an active `npm run dev` command, you need to stop and re-run it, for the changes to take effect.
 
 ## 4. Adding Google Fonts
 
@@ -112,6 +126,7 @@ The mixin has 4 parameters.
 | weights | `List` | The list of weights, that should be loaded. |
 
 Example:
+
 ```scss
 @include googleFont((
   "name": "IBM Plex Sans",
@@ -121,15 +136,42 @@ Example:
 ));
 ```
 
+There is also a second mixin, that can handle multiple fonts at once. This reduces the amount of code needed, if your
+website or application requires multiple fonts to be loaded.
+
+Example:
+
+```scss
+@include googleFonts((
+  (
+    "name": "Roboto",
+    "folder": "Roboto",
+    "files": "Roboto",
+    "weights": (300, 400, 700)
+  ),
+  (
+    "name": "Besley",
+    "folder": "Besley",
+    "files": "Besley",
+    "weights": (300, 400, 700)
+  ),
+));
+```
+
 ## 5. Adding Responsive Images
 
 ### 5.1 What is it?
 
-This boilerplate includes a command to resize images based on a configuration file, to get rid of the hassle to care about the responsive image sizes manually. One of the benefits of this process is that it works on all major operating systems, without the need to do any manual installations.
+This boilerplate includes a command to resize images based on a configuration file, to get rid of the hassle to care
+about the responsive image sizes manually. One of the benefits of this process is that it works on all major operating
+systems, without the need to do any manual installations.
 
-If you want to use the resizing feature, please edit the file `images.config.js` in the root directory and change all settings to your needs. You can add multiple collections with different configurations for greatest flexibility.
+If you want to use the resizing feature, please edit the file `images.config.js` in the root directory and change all
+settings to your needs. You can add multiple collections with different configurations for greatest flexibility.
 
-In order for this command to work properly you need to have "clean" filenames for your images, that don't match the patterns used to create the resized filenames automatically. The filenames get a postfix, based on the resizing settings for the images width and height.
+In order for this command to work properly you need to have "clean" filenames for your images, that don't match the
+patterns used to create the resized filenames automatically. The filenames get a postfix, based on the resizing settings
+for the images width and height.
 
 Filenames, that will be recognized as original images, are as follows.
 
@@ -189,9 +231,11 @@ Filenames, that will **not** be recognized as original images, are as follows.
   </tbody>
 </table>
 
-You can use a [test tool](https://regex101.com/r/6f2cEu/4) to check if your filenames will work correctly, by adding one filename per line into the "Test Strings" field. This helps to ensure that none of your images will be deleted.
+You can use a [test tool](https://regex101.com/r/6f2cEu/4) to check if your filenames will work correctly, by adding one
+filename per line into the "Test Strings" field. This helps to ensure that none of your images will be deleted.
 
-You can use the regular expression to test files on your local machine, too. On Linux and Mac operating systems you can check if any image in a folder would conflict with the resizing tool by using the following command:
+You can use the regular expression to test files on your local machine, too. On Linux and Mac operating systems you can
+check if any image in a folder would conflict with the resizing tool by using the following command:
 
 ```bash
 find ./ | grep -E ".*\-([0-9]+x[0-9]+|w[0-9]+|h[0-9]+)\.[a-z]+$"
@@ -203,7 +247,8 @@ All files that are listed should get renamed, following the rules you can see in
 
 ### 5.2 The Configuration
 
-The responsive image configuration is saved in the `images.config.js` file, located in the root directory of the project.
+The responsive image configuration is saved in the `images.config.js` file, located in the root directory of the
+project.
 
 #### 5.2.1 Global Settings
 
@@ -228,7 +273,8 @@ The configuration has some global settings, that you should set to your personal
 
 #### 5.2.2 Collections
 
-The configuration uses **collections** which include a set of configuration options to resize images. This allows you to define different resizing rules for multiple directories.
+The configuration uses **collections** which include a set of configuration options to resize images. This allows you to
+define different resizing rules for multiple directories.
 
 Each collection has the following options.
 
@@ -271,7 +317,8 @@ Each collection has the following options.
 
 #### 5.2.3 Sizes
 
-Each collection has the option "sizes" which includes a set of configurations for different image sizes that will be generated. Width and height are optional, if at least one of them is set.
+Each collection has the option "sizes" which includes a set of configurations for different image sizes that will be
+generated. Width and height are optional, if at least one of them is set.
 
 Each size has the following options.
 
@@ -357,7 +404,9 @@ The resizing command supports different arguments to remove resized images, recr
 
 **Important:**
 
-The recreation and removal arguments will force the command to remove all images it detects as being resized versions (by their filename). If you use other tools for your images that add postfixes to the filenames, this might lead to false positives, so please backup your files before you run this.
+The recreation and removal arguments will force the command to remove all images it detects as being resized versions (
+by their filename). If you use other tools for your images that add postfixes to the filenames, this might lead to false
+positives, so please backup your files before you run this.
 
 ```bash
 npm run images remove
@@ -367,9 +416,12 @@ npm run images remove
 
 ## 6. Image Credits
 
-All placeholder images used in the `index.html` file are downloaded from [pexels.com](https://www.pexels.com/), and [pixabay.com](https://pixabay.com/). Those are two fantastic collections of free stock photos from photographers around the globe.
+All placeholder images used in the `index.html` file are downloaded from [pexels.com](https://www.pexels.com/),
+and [pixabay.com](https://pixabay.com/). Those are two fantastic collections of free stock photos from photographers
+around the globe.
 
-If you're one of the photographers and would like to change the linked website or get an image removed from the boilerplate, please shoot me an email to code@dominik-hanke.de and I'll update it as soon as possible.
+If you're one of the photographers and would like to change the linked website or get an image removed from the
+boilerplate, please shoot me an email to code@dominik-hanke.de and I'll update it as soon as possible.
 
 <table>
   <thead>
