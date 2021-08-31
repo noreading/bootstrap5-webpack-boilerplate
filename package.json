@@ -26,7 +26,7 @@
     "fast-glob": "^3.2.7",
     "mime-types": "^2.1.32",
     "mini-css-extract-plugin": "^2.2.0",
-    "node-sass": "^6.0.0",
+    "node-sass": "^6.0.1",
     "path": "^0.12.7",
     "postcss": "^8.3.5",
     "postcss-loader": "^6.1.1",
