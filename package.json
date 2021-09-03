@@ -17,7 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
-    "@popperjs/core": "^2.9.2",
+    "@popperjs/core": "^2.10.1",
     "autoprefixer": "^10.3.3",
     "babel-loader": "^8.2.2",
     "bootstrap": "^5.1.0",
