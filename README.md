@@ -37,7 +37,7 @@ and newer.
    rm -rf .git
    ```
 
-3. Update the package.json.
+3. Update the `package.json`.
 
    ```JSON
       {
@@ -48,13 +48,23 @@ and newer.
       }
    ```
 
-4. Install needed dependencies
+4. Enable / Disable bootstrap features in `main.js`.
+
+   ```javascript
+   initBootstrap({
+     tooltip: true,
+     popover: true,
+     toasts: true,
+   });
+   ```
+
+6. Install needed dependencies
 
    ```bash
    npm install
    ```
 
-5. Run webpack
+7. Run webpack
 
    ```bash
    npm run dev
@@ -108,7 +118,7 @@ you've got an active `npm run dev` command, you need to stop and re-run it, for 
 
 ## 4. Adding Google Fonts
 
-If you want to add fonts from [fonts.google.com](https://fonts.google.com/), you should follow a few easy steps.   
+If you want to add fonts from [fonts.google.com](https://fonts.google.com/), you should follow a few easy steps.
 The boilerplate uses the [Roboto](https://fonts.google.com/specimen/Roboto) as an example.
 
 1. Download the required font families as ZIP files from [fonts.google.com](https://fonts.google.com/).
