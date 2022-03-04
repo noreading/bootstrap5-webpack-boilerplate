@@ -21,7 +21,7 @@
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
     "bootstrap": "^5.1.3",
-    "css-loader": "^6.6.0",
+    "css-loader": "^6.7.0",
     "dotenv-webpack": "^7.1.0",
     "fast-glob": "^3.2.11",
     "mime-types": "^2.1.34",
