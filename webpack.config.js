@@ -103,6 +103,9 @@ export default {
     static: {
       directory: path.resolve(process.cwd(), "public")
     },
+    watchFiles: [
+      path.resolve(process.cwd(), "index.html")
+    ],
     compress: true,
     port: process.env.PORT || 9090,
     hot: true,
