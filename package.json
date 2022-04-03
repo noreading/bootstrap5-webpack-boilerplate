@@ -1,14 +1,14 @@
 {
-  "name": "bootstrap5-webpack-boilerplate",
+  "name": "foys-bootstrap5-webpack-boilerplate",
   "version": "1.0.1",
-  "description": "A simple boilerplate using Bootstrap 5, Webpack and Babel.",
+  "description": "FOYS boilerplate Bootstrap 5, Webpack and Babel.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js --mode production",
     "dev": "webpack --config webpack.config.js --mode development --watch",
     "images": "node ./bin/images.js"
   },
-  "author": "Dominik Hanke",
+  "author": "Arjen Zijlstra | focusonyoursite.nl",
   "license": "MIT",
   "repository": {
     "type": "git",
