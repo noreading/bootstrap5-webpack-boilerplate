@@ -2,7 +2,7 @@
 import '../scss/main.scss';
 
 // Load Bootstrap init
-import {initBootstrap} from "./bootstrap";
+import {initBootstrap} from "./bootstrap.js";
 
 // Loading bootstrap with optional features
 initBootstrap({
