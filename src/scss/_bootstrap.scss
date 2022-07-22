@@ -25,9 +25,10 @@
 @import "~bootstrap/scss/variables";
 
 //---------------------------------------------
-// 3. Mixins
+// 3. Mixins + Utilities
 //---------------------------------------------
 
+@import "~bootstrap/scss/maps";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/utilities";
 

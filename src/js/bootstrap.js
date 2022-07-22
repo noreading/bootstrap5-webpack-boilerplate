@@ -46,9 +46,9 @@ export const initBootstrap = function (config) {
         return
       }
 
-      // Init toast
-      const toast = new bootstrap.Toast(toastTargetEl)
-
+      // Initialize toast
+      const toast = new bootstrap.Toast(toastTargetEl, {})
+      
       // Add click even to trigger
       toastTriggerEl.addEventListener("click", function (event) {
         event.preventDefault();
