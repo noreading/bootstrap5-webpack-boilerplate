@@ -2,30 +2,38 @@
 //
 //  Partially loading Bootstrap's components
 //
-//    1. Functions
-//    2. Variables
-//    3. Mixins
-//    4. Root + Reboot
-//    5. Type
-//    6. Components
-//    7. Helpers & Mixins for Breakpoints + Print
+//    1. Banner
+//    2. Functions
+//    3. Variables
+//    4. Maps + Mixins
+//    5. Root + Reboot
+//    6. Type
+//    7. Components
+//    8. Helpers & Mixins for Breakpoints + Print
 //
 //---------------------------------------------
 
 //---------------------------------------------
-// 1. Functions
+// 1. Banner
+//---------------------------------------------
+
+@import "~bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+//---------------------------------------------
+// 2. Functions
 //---------------------------------------------
 
 @import "~bootstrap/scss/functions";
 
 //---------------------------------------------
-// 2. Variables
+// 3. Variables
 //---------------------------------------------
 
 @import "~bootstrap/scss/variables";
 
 //---------------------------------------------
-// 3. Mixins + Utilities
+// 4. Maps + Mixins
 //---------------------------------------------
 
 @import "~bootstrap/scss/maps";
@@ -33,20 +41,20 @@
 @import "~bootstrap/scss/utilities";
 
 //---------------------------------------------
-// 4. Root + Reboot
+// 5. Root + Reboot
 //---------------------------------------------
 
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
 
 //---------------------------------------------
-// 5. Type
+// 6. Type
 //---------------------------------------------
 
 @import "~bootstrap/scss/type";
 
 //---------------------------------------------
-// 6. Components
+// 7. Components
 //---------------------------------------------
 
 @import "~bootstrap/scss/images";
@@ -75,9 +83,11 @@
 @import "~bootstrap/scss/popover";
 @import "~bootstrap/scss/carousel";
 @import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+@import "~bootstrap/scss/placeholders";
 
 //---------------------------------------------
-// 7. Helpers & Mixins for Breakpoints + Print
+// 8. Helpers & Mixins for Breakpoints + Print
 //---------------------------------------------
 
 @import "~bootstrap/scss/helpers";
