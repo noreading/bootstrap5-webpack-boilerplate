@@ -33,7 +33,7 @@
     "postcss": "^8.4.12",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "7.4.3",
-    "sass": "^1.51.0",
+    "sass": "^1.54.9",
     "sass-loader": "^13.0.2",
     "sharp": "^0.30.4",
     "style-loader": "^3.3.1",
