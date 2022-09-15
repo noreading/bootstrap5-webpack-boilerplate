@@ -19,7 +19,7 @@
         "@babel/core": "^7.19.0",
         "@babel/preset-env": "^7.19.0",
         "@popperjs/core": "^2.11.5",
-        "autoprefixer": "^10.4.8",
+        "autoprefixer": "^10.4.11",
         "babel-loader": "^8.2.4",
         "bootstrap": "^5.2.1",
         "copy-webpack-plugin": "^11.0.0",
