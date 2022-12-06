@@ -28,7 +28,7 @@
         "fast-glob": "^3.2.12",
         "html-webpack-plugin": "^5.5.0",
         "mime-types": "^2.1.34",
-        "mini-css-extract-plugin": "^2.6.0",
+        "mini-css-extract-plugin": "^2.7.2",
         "path": "^0.12.7",
         "postcss": "^8.4.12",
         "postcss-loader": "^7.0.1",
