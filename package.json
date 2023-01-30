@@ -23,7 +23,7 @@
         "babel-loader": "^9.1.0",
         "bootstrap": "^5.2.1",
         "copy-webpack-plugin": "^11.0.0",
-        "css-loader": "^6.7.0",
+        "css-loader": "^6.7.3",
         "dotenv-webpack": "^8.0.1",
         "fast-glob": "^3.2.12",
         "html-webpack-plugin": "^5.5.0",
