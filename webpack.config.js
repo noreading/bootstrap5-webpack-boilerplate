@@ -1,10 +1,15 @@
 import Dotenv from "dotenv-webpack"
 import path from "path"
+import {fileURLToPath} from 'url';
 import MiniCssExtractPlugin from "mini-css-extract-plugin"
 import HtmlWebpackPlugin from "html-webpack-plugin"
 import CopyPlugin from "copy-webpack-plugin"
 
-export default {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const sourcemaps = false;
+
+const config = {
   // Define the entry points of our application (can be multiple for different sections of a website)
   entry: {
     main: "./src/js/main.js",
@@ -14,10 +19,13 @@ export default {
   output: {
     filename: "js/[name].js",
     path: path.resolve(process.cwd(), "./public"),
+    pathinfo: false,
   },
 
-  // Define development options
-  devtool: "source-map",
+  // Define optimization settings
+  optimization: {
+    runtimeChunk: true,
+  },
 
   // Define loaders
   module: {
@@ -25,26 +33,35 @@ export default {
       // Use babel for JS files
       {
         test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: [
-              "@babel/preset-env"
-            ]
+        include: path.resolve(__dirname, 'src/js'),
+        use: [
+          {
+            loader: 'thread-loader',
+            options: {
+              workers: 2
+            }
+          },
+          {
+            loader: "babel-loader",
+            options: {
+              presets: [
+                "@babel/preset-env"
+              ]
+            }
           }
-        }
+        ],
       },
       // CSS, PostCSS, and Sass
       {
         test: /\.(scss|css)$/,
+        include: path.resolve(__dirname, 'src/scss'),
         use: [
           MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
               importLoaders: 2,
-              sourceMap: true,
+              sourceMap: sourcemaps,
               url: false,
             }
           },
@@ -58,12 +75,13 @@ export default {
               }
             }
           },
-          "sass-loader"
+          "sass-loader",
         ],
       },
       // File loader for images
       {
         test: /\.(jpg|jpeg|png|git|svg)$/i,
+        include: path.resolve(__dirname, 'images'),
         type: "asset/resource",
       }
     ],
@@ -88,8 +106,12 @@ export default {
         {
           from: "src/images",
           to: "images",
+          force: false
         }
-      ]
+      ],
+      options: {
+        concurrency: 50,
+      }
     }),
 
     // Inject styles and scripts into the HTML
@@ -116,3 +138,10 @@ export default {
     hints: false
   }
 };
+
+if (sourcemaps) {
+  // Define development options
+  config.devtool = "source-map";
+}
+
+export default config;

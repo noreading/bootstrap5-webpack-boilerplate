@@ -37,6 +37,7 @@
         "sass-loader": "^13.0.2",
         "sharp": "^0.31.0",
         "style-loader": "^3.3.1",
+        "thread-loader": "^3.0.4",
         "trash": "^8.1.0",
         "uuid": "^9.0.0",
         "webpack": "^5.70.0",
