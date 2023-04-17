@@ -30,7 +30,7 @@
         "mime-types": "^2.1.34",
         "mini-css-extract-plugin": "^2.7.2",
         "path": "^0.12.7",
-        "postcss": "^8.4.12",
+        "postcss": "^8.4.22",
         "postcss-loader": "^7.0.1",
         "postcss-preset-env": "^7.8.1",
         "sass": "^1.54.9",
