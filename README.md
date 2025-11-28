@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository is archived and not maintained anymore!
+
 # Bootstrap 5 + WebPack 5 = Boilerplate
 
 This is a professional front-end template for building web apps and sites faster, without having to create the basic
